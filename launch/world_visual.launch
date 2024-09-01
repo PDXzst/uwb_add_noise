@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+	<arg name="gui" default="False" />
+	<param name="use_gui" value="$(arg gui)"/>
+    <arg name="paused" default="false"/>
+    <arg name="use_sim_time" default="true"/>
+    <arg name="headless" default="false"/>
+    <arg name="debug" default="false"/>
+    <param name="model1/robot_description" textfile="$(find uwb_add_noise)/urdf/model1.urdf" />
+    <param name="model2/robot_description" textfile="$(find uwb_add_noise)/urdf/model2.urdf" />  
+    <!--<node pkg = "uwb_add_noise" type = "uwb_add_noise" name="uwb_add_noise_node"/>-->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find uwb_add_noise)/rviz/visual.rviz" />
+</launch>

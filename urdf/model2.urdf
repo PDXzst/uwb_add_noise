@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<robot name="office" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- 定义材料 -->
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+
+  <material name="while">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0.0 0.0 1.0 1.0"/>
+  </material>
+
+  <link name="floor_link">
+    <visual>
+      <geometry>
+        <box size="20 20 0.001"/>
+      </geometry>
+      <origin xyz="0 0 0 " rpy="0 0 0" />
+      <material name="grey"/>
+    </visual>
+  </link>
+  <link name="sheet_link">
+    <visual>
+      <geometry>
+        <box size="10 10 1"/>
+      </geometry>
+      <origin xyz="0 0 0 " rpy="0 0 0" />
+      <material name="while"/>
+    </visual>
+  </link>
+  <joint name="sheet2floor" type="fixed">
+      <parent link="floor_link"/>
+      <child link="sheet_link"/>
+      <origin xyz="0 0 0.5"/>
+  </joint>
+
+  <link name="los0_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.08" length="0.3"/>
+      </geometry>
+      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <link name="los1_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.08" length="0.3"/>
+      </geometry>
+      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <link name="los2_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.08" length="0.3"/>
+      </geometry>
+      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <link name="los3_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.08" length="0.3"/>
+      </geometry>
+      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <joint name="los0_floor" type="fixed">
+      <parent link="floor_link"/>
+      <child link="los0_link"/>
+      <origin xyz="-10 -10 0"/>
+  </joint>
+
+  <joint name="los1_floor" type="fixed">
+      <parent link="floor_link"/>
+      <child link="los1_link"/>
+      <origin xyz="10 -10 0"/>
+  </joint>
+
+  <joint name="los2_floor" type="fixed">
+      <parent link="floor_link"/>
+      <child link="los2_link"/>
+      <origin xyz="10 10 0"/>
+  </joint>
+
+  <joint name="los3_floor" type="fixed">
+      <parent link="floor_link"/>
+      <child link="los3_link"/>
+      <origin xyz="-10 10 0"/>
+  </joint>
+
+
+</robot>
