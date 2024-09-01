@@ -24,3 +24,24 @@ rviz环境
 ```
 #### urdf
 存放模型  
+
+#### how to use
+编译  
+```
+cd 'workspace'
+catkin_make
+```
+运行  
+```
+source devel/setup.bash
+roscore
+```
+先跑`bag`  
+```
+rosbag play bag/bag1.bag
+```
+运行可视化文件  
+```
+roslaunch uwb_add_noise world_visual.launch
+```
+
