@@ -48,9 +48,9 @@
   <link name="los0_link">
     <visual>
       <geometry>
-        <cylinder radius="0.08" length="0.3"/>
+        <cylinder radius="0.08" length="0.44"/>
       </geometry>
-      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <origin xyz="0 0 0.22" rpy="0 0 0" />
       <material name="black"/>
     </visual>
   </link>
@@ -58,9 +58,9 @@
   <link name="los1_link">
     <visual>
       <geometry>
-        <cylinder radius="0.08" length="0.3"/>
+        <cylinder radius="0.08" length="0.44"/>
       </geometry>
-      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <origin xyz="0 0 0.22" rpy="0 0 0" />
       <material name="black"/>
     </visual>
   </link>
@@ -68,9 +68,9 @@
   <link name="los2_link">
     <visual>
       <geometry>
-        <cylinder radius="0.08" length="0.3"/>
+        <cylinder radius="0.08" length="0.44"/>
       </geometry>
-      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <origin xyz="0 0 0.22" rpy="0 0 0" />
       <material name="black"/>
     </visual>
   </link>
@@ -78,9 +78,9 @@
   <link name="los3_link">
     <visual>
       <geometry>
-        <cylinder radius="0.08" length="0.3"/>
+        <cylinder radius="0.08" length="0.44"/>
       </geometry>
-      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <origin xyz="0 0 0.22" rpy="0 0 0" />
       <material name="black"/>
     </visual>
   </link>

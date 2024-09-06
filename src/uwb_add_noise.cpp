@@ -29,11 +29,11 @@ double Add_Noise::GuassianKernel(double mu, double sigma)
 void Add_Noise::callback_los1(const std_msgs::Bool::ConstPtr& los1_in_ptr){
   std_msgs::Bool los1_in(*los1_in_ptr);
   if(los1_in.data == true){
-    stddev1 = 0.01;
+    stddev1 = 0.01;//los时，噪声标准差为0.01
     mean1 = 0;
   }
   else{
-    stddev1 = 0.1;
+    stddev1 = 0.1;//nlos时，噪声标准差为0.1
     mean1 = 0;
   }
 }

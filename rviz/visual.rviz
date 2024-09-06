@@ -121,7 +121,7 @@ Visualization Manager:
       Marker Topic: /los1_visual
       Name: Marker
       Namespaces:
-        "": true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -129,7 +129,7 @@ Visualization Manager:
       Marker Topic: /los2_visual
       Name: Marker
       Namespaces:
-        "": true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -137,7 +137,7 @@ Visualization Manager:
       Marker Topic: /los3_visual
       Name: Marker
       Namespaces:
-        "": true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -145,7 +145,15 @@ Visualization Manager:
       Marker Topic: /los4_visual
       Name: Marker
       Namespaces:
-        "": true
+        {}
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /visualization_line
+      Name: Marker
+      Namespaces:
+        {}
       Queue Size: 100
       Value: true
   Enabled: true
@@ -176,7 +184,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 23.364879608154297
+      Distance: 23.2386474609375
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -184,17 +192,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.6547895669937134
-        Y: 0.027995187789201736
-        Z: 3.767467737197876
+        X: -0.20138850808143616
+        Y: -0.11891346424818039
+        Z: 3.5945279598236084
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5597963333129883
+      Pitch: 1.544796347618103
       Target Frame: <Fixed Frame>
-      Yaw: 4.713594436645508
+      Yaw: 4.708599090576172
     Saved: ~
 Window Geometry:
   Displays:
